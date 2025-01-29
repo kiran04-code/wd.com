@@ -1,0 +1,1025 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#loding{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 100vh;
+   background: #000000
+   url("Eclipse@1x-1.1s-200px-200px.gif") no-repeat center;
+  }
+/* Body styles */
+html, body {
+    height: 100%;
+    width: 100%;
+
+}
+
+nav {
+    height: 13%;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.953);
+    border-bottom: 4px solid blue; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navleft {
+    height: 100%;
+    width: 25%;
+  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navleft img {
+    width: 70%; 
+    height: 100%; 
+    object-fit: contain; 
+    margin-right: 40%;
+}
+.navright {
+    height: 100%;
+    width: 60%;
+     gap: 6px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;  
+   
+    
+}
+.navright a{
+   text-decoration: none;
+   color: rgb(0, 26, 255);
+   font-family: Teachers;
+ font-family: 1200px;
+
+    
+}
+.link::after{
+    content: "";
+   height: 1.7px;
+   width: 100%;
+  display: block;
+  background-color: black;
+  transform: scale(0);
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+.link:hover::after{
+   transform: scaleX(1);
+   transform-origin: left;
+}
+.bar{
+
+    height:100%;
+    width: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size:4vw;
+    flex-direction: column
+    
+}
+#hdnnv{
+    height:250px;
+    width: 60%;
+    display: none;
+    z-index: 25 ;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    
+    border: 5px solid transparent;
+   border-image: linear-gradient(to bottom, #02025d, #12a7e2) 1;
+   border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+#hdnnv a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Teachers;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+#abtpci{
+    width: 100%;
+    display: flex;
+    background-color: #007bff;
+}
+#abtpci i{
+    margin-right: 72%;
+    margin-top:2%;
+}
+#abtpci a{
+    width: 100%;
+    color: #ffffff;
+    background-color: #007bff;
+}
+.hdnm{
+    height: auto;
+    width: 100%;
+   
+    display: flex;
+    display: none;
+    flex-direction: column;
+}
+.hdnm a{
+   font-size: 11px;
+}
+.navhiden{
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin-top: 16%;
+    margin-right: 36%;
+    z-index: 1;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 3px solid rgb(0, 149, 255);
+}
+
+.div{
+   width: 100%;
+   height: 15%;
+   margin-top: 8px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.div:hover{
+  background-color: #01a6ff;
+  color: #ffffff;
+}
+.div a:hover{
+  color: #ffffff;
+}
+.navhiden2{
+    height: 100px;
+    width: 140px;
+    position: absolute;
+    margin-top: 10%;
+    z-index: 1;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 3px solid rgb(0, 140, 255);
+}
+.div2{
+   width: 100%;
+   height: 100%;
+   margin-top: 10px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.div2:hover{
+  background-color: #00ccff;
+  color: #ffffff;
+  
+}
+.div2 a:hover{
+  color: #ffffff;
+}
+.navhiden3{
+    height: 40px;
+    width: 140px;
+    position: absolute;
+    margin-top:5%;
+    z-index: 1;
+    display: flex;
+    margin-left: 40%;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: none;
+    border: 3px solid rgb(0, 34, 255);
+}
+.div3{
+   width: 100%;
+   height: 100%;
+   margin-top: 8px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.div3:hover{
+  background-color: #00ccff;
+  color: #ffffff;
+}
+.div3 a:hover{
+  color: #ffffff;
+}
+
+
+.heading{
+    height: 20%;
+    width: 45%;
+    margin-top: 15%;
+    margin-left: 1%;
+}
+.heading h1{
+  font-family: futura;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.heading span{
+  font-family: futura;
+  color: #0967ff;
+  background-color: #ffffff;
+}
+.winner{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #00008B, #d787eb);
+    gap: 5%;
+    margin-top: 20%;
+
+
+}
+.win1{
+    height: 100%;
+    width: 30%;
+    
+}
+.divfh1p{
+    height: 70%;
+    /* background-color: #007bff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.divfh1p h2{
+   font-family: futura;
+   color: #ffffff;
+   font-size: 1.5vw;
+   margin-left: 5%;
+}
+.divfh1p p{
+  font-family: Teachers;
+   color: #ffffff;
+   margin-left: 5%;
+}
+.winlist{
+    height: 15%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #040834;
+   border: 0.5px solid rgb(255, 255, 255);
+   margin-left: 5%;
+  position: relative;
+  bottom: 15%;
+  margin-top: 5%;
+}
+.winlist:hover{
+   background: linear-gradient(to bottom, #00008B, #d787eb);
+   border: 2px solid rgb(0, 0, 0);
+}
+.winlist a{
+   text-decoration: none;
+   font-family: Teachers;
+   color: #ffefef;
+
+}
+.win2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.winh1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.winh1 h1{
+   color: #ffffff;
+   font-family: futura;
+}
+.won{
+    height: 30%;
+    width: 90%;
+    gap: 5%;
+    display: flex;
+}
+.won1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+.won1 span{
+   font-family: futura;
+   color: #ffffff;
+
+}
+.win3{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.win3img{
+    height: 90%;
+    width: 90%;
+}
+.win3img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fot{
+    height:50%;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    background: linear-gradient(to bottom, blue, rgb(113, 149, 241));
+}
+.fot1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    
+}
+.pcisp{
+    height: 10%;
+    width: 25%;
+    padding: 5%;
+}
+.pcisp span{
+   font-family: Teachers;
+   color: #f9f9f9;
+ font-size: 2rem;
+} .divpci{
+    height: 70%;
+    width:90% ;
+    margin-top: 12%;
+    margin-left: 20px;
+ 
+}
+.divpci p{
+   display: flex;
+   font-size: 1vw;
+   font-family: Teachers;
+   color: #ffffff;
+}
+.fot2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.adre{
+    height: 25%;
+    width: 100%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adre h2{
+    font-family: futura;
+    color: #ffffff;
+}
+.adrediv{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.adrediv p{
+   font-family: Teachers;
+   color: #ffffff;
+   margin-top: 15px;
+}
+.fot3{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    height: 30%;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.cont1{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(22, 11, 120);
+
+}
+.cont1:hover{
+   background-color: rgb(113, 149, 241);
+   border: 1px solid rgb(0, 0, 0);
+
+}
+.fotter{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(113, 149, 241);
+    justify-content: space-evenly;
+}
+.fotter1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotter1 h2{
+   color: #f8e9e9;
+   font-family: futura;
+   font-size: 1vw;
+}
+.fotter2{
+    height: 100%;
+    width: 30%;
+   
+}
+.fotter2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fotterimg{
+    height: 100%;
+    width: 50%;
+}
+.fotterimg img{
+    height: 100%;
+    width: 100%;
+   object-fit: contain;
+}
+.brif{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.brif1{
+    height: 95%;
+    width: 40%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.brif1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.brif2{
+    height: 78%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.brif2 h2{
+   font-family: Teachers;
+   margin-left: 2%;
+
+}
+.brif2 p{
+   font-family: Teachers;
+   font-size: 1.2vw;
+   padding: 20px;
+
+}
+.br{
+    height: 5px;
+    width:100px;
+    border-radius: 10px;
+    margin-left:2%;
+    margin-top: 2%;
+    background-color: #0084ff;
+}
+.aboutpci{
+    margin-top: 5%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.abtleft{
+    height: 95%;
+    width:48% ;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #007bff;
+}
+.abtleft img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.abtright{
+    height: 95%;
+    width:48% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abtrighh{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #00008B; */
+}
+.abtrighh h2{
+   color: #000000;
+   font-family: Teachers;
+   font-size: 2.3vw;
+   margin-right: 15.5%;
+}
+.kiranstyl{
+    height: 5px;
+    width: 25%;
+    border-radius: 10px;
+    margin-right: 70%;
+    margin-top: 2%;
+    background-color: #007bff;
+}
+.abtp{
+    height: 75%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.abtp p{
+    font-family: Teachers;
+    font-size: 1.1vw;
+}
+.lin{
+    height: 0.8%;
+    background-color: #2861ff;
+}
+.latewinh1{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    color: #0713ff;
+    font-family: futura;
+}
+.latewin{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #2861ff; */
+}
+.leteswin1{
+    height: 90%;
+    width: 28%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.latestimg{
+    height: 75%;
+    width: 100%;
+   
+    background-color: red;
+}
+.latestimg img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+.latstname{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.latstname h3{
+  font-family: Teachers;
+  text-transform: capitalize;
+}
+.latstname p{
+  font-family: Teachers;
+  text-transform: capitalize;
+}
+.latstname span{
+  font-family: Teachers;
+  text-transform: capitalize;
+}
+.mainimge {
+    background-image: url("real.heros.jpeg");
+    height: 100%;
+    width: 100%;
+    background-size: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    background-position: center; /* Centers the image inside the container */
+    background-repeat: no-repeat;
+}
+
+@media(max-width:800px){
+    .latstname h3{
+        font-family: Teachers;
+        text-transform: capitalize;
+        font-size: 3vw;
+      }
+      .latstname p{
+        font-family: Teachers;
+        text-transform: capitalize;
+        font-size: 2.2vw;
+      }
+      .latstname span{
+        font-family: Teachers;
+        text-transform: capitalize;
+        font-size: 2.2vw;
+        margin-left: 10%;
+      }
+
+    .latewin{
+        height:95%;
+        width: 100%;
+        display: flex;
+        gap: 5%;
+      flex-direction: column;
+
+    }
+    .leteswin1{
+        height: 100%;
+        width: 70%;
+        border-radius: 10px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+    }
+    .abtp p{
+        font-family: Teachers;
+        font-size: 2.5vw;
+    }
+    .kiranstyl{
+        margin-right: 62%;
+        margin-top: 2%;
+        background-color: #007bff;
+    }
+    .aboutpci{
+   gap:2%;
+        display: flex;
+       flex-direction: column;
+    }
+    .abtleft{
+        height: 95%;
+        width:95% ;
+        background-color: #007bff;
+    }
+    .abtright{
+        height: 95%;
+        width:95% ;
+        /* background-color: #28af4c; */
+    }
+    .abtrighh h2{
+        color: #000000;
+        font-family: Teachers;
+        font-size: 5vw;
+     }
+    .winlist{
+        height: 25%;
+       
+      position: relative;
+      margin-top: 5%;
+    }
+    .divfh1p{ margin-top: 5%;
+  height: 100%;
+    }
+    .winner{
+        margin-top: 10%;
+    
+    }
+.divfh1p  p {
+
+ margin-left: 5%;
+}
+.divfh1p  h2{
+
+ margin-left: 5%;
+}
+    .won{
+        margin-top: 15%;
+    }
+    .brif2 h2{
+        font-family: Teachers;
+        margin-left: 5%;
+     
+     }
+.brif2 p{
+   font-family: Teachers;
+   font-size:2.9vw;
+   
+
+}
+    .brif1 img{
+        height: 100%;
+        width: 100%;
+       border-radius: 10px;
+        object-fit: contain;
+    }
+    .brif1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .brif2{
+        height: 90%;
+        width: 100%;
+    }
+    .brif{
+       height: 80%;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .heading h1{
+      font-family: Teachers;
+      font-size: 2.5vw;
+    }
+    .fotter1 h2{
+        margin-left: 15%;
+        font-size: 3.5vw;
+     }
+    .fotter{
+        display: flex;
+        height: 30%;
+       flex-direction: column;
+       width: 100%;
+
+    }
+    .fotter1{
+        
+        width: 100%;
+       
+    }
+    .fotter2{
+        
+        width: 100%;
+       
+    }
+    .divpci p{
+        display: flex;
+        font-size: 4vw;
+     }
+    .pcisp span{
+       font-size: 3vw;
+     }
+    .fot{
+       display: flex;
+       height: 100%;
+       flex-direction: column;
+    }
+    .fot1{
+        height: 100%;
+        width: 100%;
+    }
+    .fot2{
+        height: 100%;
+        width: 100%;
+    }
+    .fot3{
+        height: 100%;
+        width: 100%;
+    }
+.winner{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+
+}.win1{
+    height: 100%;
+    width: 100%;
+     background: linear-gradient(to bottom, #00008B, #642da8);
+}
+.divfh1p h2{
+    
+    font-size: 3.5vw;
+ }
+.win2{
+  height: 250px;
+    width: 100%;
+    margin-top: 10%;
+
+}
+.win3{
+    height: 100%;
+    width: 100%;
+  
+}
+    .mainimg{
+        height: 170px;
+       
+    }
+   
+    .title h1{
+        width: 100%;
+      font-size: 1.8vw;
+    
+    }
+    
+    .navleft img {
+      margin-left: 10%;
+    }
+
+    .navright {
+   display: none;
+        
+    }
+
+    .bar{
+        display: flex;
+        font-size:6vw;
+        
+    }
+    #hdnnv a{
+       
+        margin-top: 10px;
+       
+    }
+
+
+    #hdnnv{
+        
+        display: none;
+        z-index: 25 ;
+        position: absolute; /* Or fixed if you want it on top even while scrolling */
+        top: 15%; /* Position at the top of the viewport */
+        left: 0;
+        height: 350px;
+        margin-top: 5%;
+        justify-content: space-evenly;
+
+       
+    }
+    /* .fotter1 h2{
+        position: relative;
+        top: 10%;
+        font-size: 2.5vw;
+    } */
+}
+@media(max-width:600px){
+    .title{
+        height: 20%;
+        width: 40%;
+        display: flex;
+        margin-top: 20%;
+        align-items: center;
+    
+    }
+    
+    #hdnnv{
+        
+        display: none;
+        z-index: 25 ;
+        position: absolute; /* Or fixed if you want it on top even while scrolling */
+        top: 5%; /* Position at the top of the viewport */
+        left: 0;
+       
+    }
+    /* #hdnnv{
+    
+        z-index: 10;
+       
+    } */
+    .brif2 p{
+        font-family: Teachers;
+        font-size:4vw;
+        
+     
+     }
+    nav {
+        height: 10%;
+        width: 100%;
+        border-bottom: 20px solid blue;
+        
+    }
+
+    #abtpci i{
+        margin-right: 60%;
+        margin-top:4%;
+    }   
+
+
+        .bar{
+            display: flex;
+            font-size:8vw;
+            
+        }
+        
+    
+    #hdnnv a{
+       display: flex;
+        margin-top: 12px;
+    
+    }
+ 
+    .navleft {
+        height: 100%;
+        width: 60%;
+      
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .navleft img {
+        width: 70%; 
+        height: 100%; 
+        object-fit: contain; 
+        margin-right: 40%;
+    }
+}
+@media (min-width: 791px) and (max-width: 780px) {
+
+       .fotter1 h2{
+        position: relative;
+        top: 45%;
+        font-size: 2.5vw;
+    }
+}
+
+  
+  
