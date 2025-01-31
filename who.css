@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #0056b3, #003366);
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+h2,
+h3,
+h1 {
+    color: #003366;
+    font-size: 26px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.achievements {
+    margin-top: 20px;
+    background: #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.achievement {
+    background: #0056b3;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.achievement:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+ol,
+ul {
+    text-align: left;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 20px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    h2,
+    h3,
+    h1 {
+        font-size: 22px;
+    }
+    p,
+    ol,
+    ul {
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #0056b3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .menu {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navbar .menu a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+.menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        box-shadow: none;
+    }
+    .navbar .menu a {
+        padding: 10px 15px;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}

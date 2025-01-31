@@ -941,6 +941,17 @@ nav {
     } */
 }
 @media(max-width:600px){
+
+    #loding{
+        position: fixed;
+        width: 90%;
+        z-index: 9999;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+       background: #000000
+       url("Eclipse@1x-1.1s-200px-200px.gif") no-repeat center ;
+      }
     .title{
         height: 20%;
         width: 40%;
