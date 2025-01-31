@@ -944,7 +944,7 @@ nav {
 
     #loding{
         position: fixed;
-        width: 90%;
+        width: 100%;
         z-index: 9999;
         height: 100vh;
         justify-content: center;
