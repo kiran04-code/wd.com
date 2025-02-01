@@ -126,7 +126,69 @@ video{
     background-clip: text; /* Standard background clip for text */
   }
   
-  
+  .featuredevent{
+    height: 60%;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+ 
+    background-color: rgb(245, 245, 245);
+  }
+  .cards{
+    height: 80%;
+    width: 22%;
+  overflow: hidden;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #00008B;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.5s;
+
+
+  }
+  #card1{
+    background-image: url("Tamilnadu-768x959.jpg");
+  }
+  #card2{
+    background-image: url("GPX-Banner-ND2025.png");
+  }
+  #card3{
+    background-image: url("photo-1024x576.jpg");
+  }
+  .ovelay {
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+opacity: 0;
+overflow: hidden;
+background-color: #00008B;
+transition: all ease 0.5s;
+  }
+    .cards:hover .ovelay{
+        opacity: 1;
+    }
+    .cards:hover {
+      transform:rotate3d(-1,2,0,20deg);
+    }
+   .ovelay h3{
+    font-family: futura;
+
+    padding: 5px;
+       }
+   .ovelay p{
+    padding: 5px;
+    font-family: Teachers;
+       }
 #hdnnv{
     height:250px;
     width: 60%;
@@ -751,6 +813,23 @@ video{
 
 @media(max-width:800px){
 
+    .featuredevent{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        padding: 25px;
+      }
+      .cards{
+        height: 100%;
+        width: 60%;
+        border-radius: 7px;
+        background-color: #00008B;
+        background-position: center;
+        background-size: cover;
+        padding: 25px;
+    
+    
+      }
     
 .pagemain h1 {
     height: 100vh;
