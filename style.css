@@ -24,6 +24,7 @@ nav {
     z-index: 999;
     display: flex; 
     position: fixed;
+    background-color: #ffffff;
     justify-content: space-between; 
     align-items: center;
      
@@ -118,12 +119,9 @@ video{
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat Thin', sans-serif; /* Ensure you have the correct font */
-    font-size: 5vwpx;
+    font-size: 4.6vw;
     font-weight: 1000;
-    color: transparent; /* Make the text transparent so the gradient is visible */
-    background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to light blue */
-    -webkit-background-clip: text; /* Apply gradient to text in WebKit browsers (Chrome, Safari) */
-    background-clip: text; /* Standard background clip for text */
+    color: #ffffff;
   }
   
   .featuredevent{
@@ -840,12 +838,9 @@ transition: all ease 0.5s;
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat Thin', sans-serif; /* Ensure you have the correct font */
-    font-size: 5vw;
-    font-weight: 900;
-    color: transparent; /* Make the text transparent so the gradient is visible */
-    background: linear-gradient(to bottom, #00008B, #87CEFA); /* Gradient from dark blue to light blue */
-    -webkit-background-clip: text; /* Apply gradient to text in WebKit browsers (Chrome, Safari) */
-    background-clip: text; /* Standard background clip for text */
+    font-size: 5.5vw;
+    font-weight: 1000;
+    color: #ffffff;
   }
   
     .latstname h3{
@@ -870,6 +865,7 @@ transition: all ease 0.5s;
         width: 100%;
         display: flex;
         gap: 5%;
+        padding: 25px;
       flex-direction: column;
 
     }
@@ -884,7 +880,7 @@ transition: all ease 0.5s;
     }
     .abtp p{
         font-family: Teachers;
-        font-size: 2.5vw;
+        font-size: 2.6vw;
     }
     .kiranstyl{
         margin-right: 62%;
@@ -893,7 +889,7 @@ transition: all ease 0.5s;
     }
     .aboutpci{
    gap:2%;
-        display: flex;
+        display: flex;padding: 25px;
        flex-direction: column;
     }
     .abtleft{
@@ -907,7 +903,7 @@ transition: all ease 0.5s;
         /* background-color: #28af4c; */
     }
     .abtrighh h2{
-        color: #000000;
+        color: #ffffff;
         font-family: Teachers;
         font-size: 5vw;
      }
@@ -925,7 +921,7 @@ transition: all ease 0.5s;
     
     }
 .divfh1p  p {
-
+background-color: brown;
  margin-left: 5%;
 }
 .divfh1p  h2{
@@ -1136,7 +1132,6 @@ transition: all ease 0.5s;
     nav {
         height: 10%;
         width: 100%;
-        border-bottom: 20px solid blue;
         
     }
 

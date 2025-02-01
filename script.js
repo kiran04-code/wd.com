@@ -156,13 +156,12 @@ home3.addEventListener("click",function(){
     }
 })
 
-gsap.from("#gsap ",{
+gsap.from(".pagemain h1 ",{
     opacity:0,
-    color:"red",
-    delay:1,
-    y:50,
-    duration:2,
-    stagger:0.3 
+    delay:3,
+    x:-70,
+    duration:2.5,
+    stagger:0.5
 
 
 
@@ -175,9 +174,9 @@ function myfunction(){
  }, 3000);
 }
 gsap.to("#nav",{
- height:"10%",
+ height:"8%",
  backgroundColor:"white",
-  duration:0.5,
+  duration:0.8,
   scrollTrigger:{
     trigger:'#nav',
     scroller:"body",
