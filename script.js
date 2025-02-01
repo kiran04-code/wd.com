@@ -174,5 +174,48 @@ function myfunction(){
    loder.style.display="none"
  }, 3000);
 }
-
-
+gsap.to("#nav",{
+ height:"10%",
+ backgroundColor:"white",
+  duration:0.5,
+  scrollTrigger:{
+    trigger:'#nav',
+    scroller:"body",
+    markers:true,
+    start:"top-10%",
+    scrub:true
+  }
+})
+gsap.to(".aboutpci",{
+  backgroundColor:"blue",
+  scrollTrigger:{
+    trigger:".aboutpci",
+    scroller:"body",
+    markers:true,
+    start:"top 40%",
+    end:"top 100%",
+    scrub:2
+  }
+})
+gsap.to(".latewin",{
+  backgroundColor:"blue",
+  scrollTrigger:{
+    trigger:".latewin",
+    scroller:"body",
+    markers:true,
+    start:"top 40%",
+    end:"top 100%",
+    scrub:2
+  }
+})
+gsap.to(".latewinh1",{
+  backgroundColor:"blue",
+  scrollTrigger:{
+    trigger:".latewinh1",
+    scroller:"body",
+    markers:true,
+    start:"top 40%",
+    end:"top 100%",
+    scrub:2
+  }
+})
