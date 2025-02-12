@@ -218,3 +218,37 @@ gsap.to(".latewinh1",{
     scrub:2
   }
 })
+//=============================== slider ===========================================================
+const sponmai = document.querySelectorAll(".sponmai");
+let counter = 0;
+
+// Adjust the initial position of each image
+sponmai.forEach((sponmai, index) => {
+  sponmai.style.left = `${index * 100}%`;
+});
+
+const goPrev = () => {
+  counter--;
+  slideImage();
+};
+
+const goNext = () => {
+  counter++;
+  slideImage();
+};
+
+const slideImage = () => {
+  // Ensure the counter doesn't exceed bounds
+  if (counter < 0) counter = sponmai.length - 1;
+  if (counter >= sponmai.length) counter = 0;
+
+  // Move images to create a sliding effect
+  sponmai.forEach((sponmai) => {
+    sponmai.style.transform = `translateX(-${counter * 100}%)`;
+    sponmai.style.transition = "transform 0.5s ease-in-out";
+  });
+};
+
+// Add event listeners for next and previous buttons
+document.getElementById('prev').addEventListener('click', goPrev);
+document.getElementById('next').addEventListener('click', goNext);
